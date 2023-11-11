@@ -17,7 +17,7 @@ print("Available features:")
 print(features)
 
 #3)display summary information
-# print(df.info())
+print(df.info())
 
 #DATA Cleaning
 #drop a column(Reading frequency.1)
@@ -38,12 +38,12 @@ df = df.loc[df.duplicated()]
 print(df)
 
 #Grouping data
-# g = df.groupby('GRADE')
-# print(g)
-#
-# for GRADE, GRADE_df in g:
-#     print(GRADE)
-#     print(GRADE_df)
+g = df.groupby('GRADE')
+print(g)
+
+for GRADE, GRADE_df in g:
+    print(GRADE)
+    print(GRADE_df)
 
 
 #calculating average columns
