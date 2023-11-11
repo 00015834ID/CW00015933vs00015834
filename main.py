@@ -37,13 +37,7 @@ print(df)
 df = df.loc[df.duplicated()]
 print(df)
 
-#Grouping data
-# g = df.groupby('GRADE')
-# print(g)
-#
-# for GRADE, GRADE_df in g:
-#     print(GRADE)
-#     print(GRADE_df)
+
 
 
 #calculating average columns
